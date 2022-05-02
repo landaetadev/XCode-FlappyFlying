@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3kA-yt-CiS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cover View Controller-->
+        <scene sceneID="83F-Zq-7Tc">
+            <objects>
+                <viewController id="3kA-yt-CiS" customClass="CoverViewController" customModule="FlappyFlying" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Te-SM-bJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-EH-fsI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flappy Flying" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63T-cP-Ss1">
+                                <rect key="frame" x="81" y="421" width="252.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-01-iM0">
+                                <rect key="frame" x="173.5" y="483" width="67.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="A0B-vC-Qlm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Tubo1" translatesAutoresizingMaskIntoConstraints="NO" id="sa3-8j-G7V">
+                                <rect key="frame" x="177" y="44" width="60" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="rU7-Dr-VDN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Tubo2" translatesAutoresizingMaskIntoConstraints="NO" id="H2J-CL-vnE">
+                                <rect key="frame" x="177" y="544" width="60" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="vbL-e1-zqO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly2" translatesAutoresizingMaskIntoConstraints="NO" id="ASO-Eb-sRs">
+                                <rect key="frame" x="86" y="316" width="64" height="90"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qth-cq-sw1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qth-cq-sw1" firstAttribute="bottom" secondItem="H2J-CL-vnE" secondAttribute="bottom" id="0nu-bV-PkO"/>
+                            <constraint firstItem="63T-cP-Ss1" firstAttribute="top" secondItem="sa3-8j-G7V" secondAttribute="bottom" constant="30" id="1hM-q3-fz7"/>
+                            <constraint firstItem="5MK-01-iM0" firstAttribute="centerX" secondItem="6Te-SM-bJe" secondAttribute="centerX" id="7ey-mL-1uv"/>
+                            <constraint firstItem="ASO-Eb-sRs" firstAttribute="centerX" secondItem="6Te-SM-bJe" secondAttribute="centerX" constant="-89" id="9kC-uz-W7n"/>
+                            <constraint firstItem="Qth-cq-sw1" firstAttribute="bottom" secondItem="H2J-CL-vnE" secondAttribute="bottom" id="Cfv-WO-0I2"/>
+                            <constraint firstItem="Usz-EH-fsI" firstAttribute="top" secondItem="Qth-cq-sw1" secondAttribute="top" id="Cpe-vT-L7I"/>
+                            <constraint firstItem="ASO-Eb-sRs" firstAttribute="top" secondItem="Qth-cq-sw1" secondAttribute="top" constant="272" id="FsJ-HE-AxG"/>
+                            <constraint firstItem="5MK-01-iM0" firstAttribute="centerX" secondItem="63T-cP-Ss1" secondAttribute="centerX" id="I1N-lC-QM9"/>
+                            <constraint firstItem="H2J-CL-vnE" firstAttribute="centerX" secondItem="6Te-SM-bJe" secondAttribute="centerX" id="IIz-xf-IzC"/>
+                            <constraint firstItem="H2J-CL-vnE" firstAttribute="top" secondItem="5MK-01-iM0" secondAttribute="bottom" constant="30" id="Not-n4-hnA"/>
+                            <constraint firstItem="63T-cP-Ss1" firstAttribute="top" secondItem="ASO-Eb-sRs" secondAttribute="bottom" constant="15" id="Qjo-ia-qaj"/>
+                            <constraint firstItem="5MK-01-iM0" firstAttribute="top" secondItem="63T-cP-Ss1" secondAttribute="bottom" constant="8" symbolic="YES" id="Vs7-iZ-J47"/>
+                            <constraint firstItem="Usz-EH-fsI" firstAttribute="leading" secondItem="6Te-SM-bJe" secondAttribute="leading" id="ZB6-C9-o2q"/>
+                            <constraint firstItem="63T-cP-Ss1" firstAttribute="centerX" secondItem="6Te-SM-bJe" secondAttribute="centerX" id="bfp-Ws-Co4"/>
+                            <constraint firstItem="Usz-EH-fsI" firstAttribute="centerX" secondItem="63T-cP-Ss1" secondAttribute="centerX" id="dHV-gf-CVG"/>
+                            <constraint firstItem="63T-cP-Ss1" firstAttribute="centerY" secondItem="6Te-SM-bJe" secondAttribute="centerY" id="hIu-90-JLs"/>
+                            <constraint firstItem="Usz-EH-fsI" firstAttribute="bottom" secondItem="Qth-cq-sw1" secondAttribute="bottom" id="ihq-OD-9tG"/>
+                            <constraint firstItem="Qth-cq-sw1" firstAttribute="bottom" secondItem="H2J-CL-vnE" secondAttribute="bottom" id="mVY-1o-Uia"/>
+                            <constraint firstItem="sa3-8j-G7V" firstAttribute="top" secondItem="Qth-cq-sw1" secondAttribute="top" id="rW8-35-juq"/>
+                            <constraint firstItem="sa3-8j-G7V" firstAttribute="centerX" secondItem="6Te-SM-bJe" secondAttribute="centerX" id="ueh-qU-J8H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblGameName" destination="63T-cP-Ss1" id="JW9-uj-3fa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07B-uX-eVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-910.14492753623199" y="85.714285714285708"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="PlayGame" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="GameViewController" customModule="FlappyFlying" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vsU-Ho-yUI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tubo1" width="148" height="1664"/>
+        <image name="Tubo2" width="148" height="1664"/>
+        <image name="fly2" width="64" height="60"/>
+        <image name="fondo" width="900" height="501"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
