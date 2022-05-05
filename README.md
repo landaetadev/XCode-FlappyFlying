@@ -1,7 +1,7 @@
 # Flappy Flying
 
 ## Content
-Flappy Flying, the idea of the old game Flappy Bird to learn a bit of iOS game programming.
+Flappy Flying, the idea of the old Flappy Bird game learning a bit of video game programming for iOS games.
 
 ## Screenshots
 
