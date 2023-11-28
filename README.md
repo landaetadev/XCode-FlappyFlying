@@ -4,7 +4,6 @@
 Flappy Flying, the idea of the old Flappy Bird game learning a bit of video game programming for iOS games.
 
 ## Screenshots
-https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/FilesProjects/XCodeFlappyFlyingApp/screenShots/FlappyBird001.png
 
 <p>
   <img src="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/FilesProjects/XCodeFlappyFlyingApp/screenShots/FlappyBird001.png" width="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
